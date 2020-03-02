@@ -1,10 +1,14 @@
-export const car = (wheels, engine) => ({
-	start: function () { return engine() },
-	wheels: function () { return wheels() }
+export const car = (wheels, engine) => () => ({
+	start: function () {
+		return engine()
+	},
+	wheels: function () {
+		return wheels()
+	}
 });
 
-export const wheels = (...type) => {
-	const [ a, b, c ] = [...type]
+export const wheels = (...type) => () => {
+	const [ a, b, c ] = [...type];
 	return a();
 };
 

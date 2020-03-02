@@ -1,24 +1,25 @@
 export class Robot {
-	constructor ({ head, arms, legs }) {
+	constructor (head, arms, legs ) {
 		this._head = head;
 		this._arms = arms;
 		this._legs = legs;
+		console.log('robot assembled');
 	}
 
 	communicate () {
-		this._head.action();
+		return this._head.action();
 	}
 
 	act () {
-		this._arms.action();
+		return this._arms.action();
 	}
 
 	move () {
-		this._legs.action();
+		return this._legs.action();
 	}
 }
 
-class SingingHead {
+export class SingingHead {
 	constructor() {
 		console.log('Singing head assembled')
 	}
@@ -27,7 +28,7 @@ class SingingHead {
 	}
 }
 
-class TalkingHead {
+export class TalkingHead {
 	constructor() {
 		console.log('Talking head assembled')
 	}
@@ -36,7 +37,7 @@ class TalkingHead {
 	}
 }
 
-class HammerArms {
+export class HammerArms {
 	constructor() {
 		console.log('Hammer arms assembled')
 	}
@@ -45,29 +46,29 @@ class HammerArms {
 	}
 }
 
-class SpiderLegs {
+export class SpiderLegs {
 	constructor() {
 		console.log('Spider legs assembled')
 	}
 	action () {
-		return 'crawl crawl crawl'
+		return 'Crawl crawl crawl'
 	}
 }
 
-class TrackLegs {
+export class TrackLegs {
 	constructor() {
 		console.log('Track legs assembled')
 	}
 	action () {
-		return 'wroom wroom'
+		return 'Wroom wroom'
 	}
 }
 
-const legs = new SpiderLegs();
-const head = new TalkingHead();
-const arms = new HammerArms();
-
-const robot = new Robot({ head, arms, legs });
-robot.communicate();
-robot.act();
-robot.move();
+// const legs = new SpiderLegs();
+// const head = new TalkingHead();
+// const arms = new HammerArms();
+//
+// const robot = new Robot(head, arms, legs);
+// robot.communicate();
+// robot.act();
+// robot.move();
