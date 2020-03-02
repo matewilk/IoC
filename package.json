@@ -1,0 +1,20 @@
+{
+  "name": "ioc",
+  "version": "1.0.0",
+  "description": "inversion of control container",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon --exec babel-node lib/container.js",
+    "test": "jest --verbose"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/node": "^7.8.4",
+    "@babel/plugin-proposal-class-properties": "^7.8.3",
+    "@babel/preset-env": "^7.8.6",
+    "jest": "^25.1.0",
+    "nodemon": "^2.0.2"
+  }
+}
