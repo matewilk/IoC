@@ -73,7 +73,7 @@ To achieve this the following configuration has to be created:
 ```javascript
 const container = new Container();
 container.add('wheels', wheels).to('car');
-container.add('type', woodenWheels).to('wheels');
+container.add('type', type).to('wheels');
 container.add('engine', engine).to('car');
 container.add('car', car);
 ```
