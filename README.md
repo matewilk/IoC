@@ -1,4 +1,4 @@
-# IoC - invesrion of control container
+# IoC - inversion of control container
 
 Simple implementation of IoC pattern.
 
