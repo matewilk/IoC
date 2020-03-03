@@ -1,5 +1,5 @@
 export class Robot {
-	constructor (head, arms, legs ) {
+	constructor ({ head, arms, legs }) {
 		this._head = head;
 		this._arms = arms;
 		this._legs = legs;
